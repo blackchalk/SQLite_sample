@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFirstName"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Enter FirstName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtlastLastName"
+        android:layout_below="@+id/txtFirstName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:layout_alignRight="@+id/txtFirstName"
+        android:layout_alignEnd="@+id/txtFirstName"
+        android:hint="Enter Lastname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtphone"
+        android:layout_below="@+id/txtlastLastName"
+        android:layout_marginTop="34dp"
+        android:layout_alignRight="@+id/txtlastLastName"
+        android:layout_alignEnd="@+id/txtlastLastName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Enter Phone" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/txtEmail"
+        android:layout_below="@+id/txtphone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Enter Email" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/btnSave"
+        android:layout_below="@+id/txtEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:onClick="save" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List"
+        android:id="@+id/btnList"
+        android:layout_below="@+id/btnSave"
+        android:layout_centerHorizontal="true"
+        android:onClick="listData" />
+</RelativeLayout>
